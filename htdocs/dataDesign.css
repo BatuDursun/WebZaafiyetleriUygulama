@@ -1,0 +1,104 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center the form on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimum yükseklik */
+    margin: 0; /* Margin sıfırlanmış olmalı */
+    background: linear-gradient(135deg, #ff4081, #81d4fa);
+    overflow: auto; /* Sayfanın kaydırılmasını sağlar */
+}
+
+/* Style for the form container */
+.form-container {
+    background-color: white;
+    padding: 20px; /* Daha fazla iç boşluk */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-height: 80vh; /* Formun yüksekliğini sınırlayın */
+    overflow: auto; /* Form içeriğinin taşmasını engelle ve kaydırılabilir yap */
+}
+
+/* Style for the form header */
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Style for the input fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff4081;
+    outline: none;
+}
+
+/* Style for the button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e03570;
+}
+
+/* Prevent form from causing page to scroll */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the result container */
+.result-container {
+    margin-top: 20px; /* Form ile sonuçlar arasına boşluk bırakır */
+}
+
+pre {
+    white-space: pre-wrap; /* Uzun metinlerin sarılmasını sağlar */
+    word-wrap: break-word; /* Uzun kelimelerin satırı geçmesini sağlar */
+    background-color: #e9ecef; /* Arka plan rengi */
+    padding: 10px; /* İç boşluk */
+    border: 1px solid #ddd; /* Sınır rengi */
+    border-radius: 4px; /* Köşe yuvarlatma */
+    max-height: 500px; /* Maksimum yüksekliği sınırla */
+    overflow-y: auto; /* Uzun içerikler için kaydırma çubuğu ekle */
+}
